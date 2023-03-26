@@ -132,7 +132,7 @@ p:hover{
 
 .spacer{
     display: flex;
-    justify-content: center; 
+    justify-content: space-evenly; 
     flex-wrap:wrap;
     background-color: #06080D;
     color: #1B8EF2;
