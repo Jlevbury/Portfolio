@@ -10,10 +10,6 @@
     padding: 0;
     box-sizing: border-box;}
 
-
-
-      
-  
  .work{
     display: flex;
     flex-wrap:wrap;
@@ -133,6 +129,21 @@ p:hover{
     border-color:#5CB9F2 ;
     box-shadow:#FF42E3 0 0 7px;
 }
+
+.spacer{
+    display: flex;
+    justify-content: center; 
+    flex-wrap:wrap;
+    background-color: #06080D;
+    color: #1B8EF2;
+    height:300px;
+    width:auto;
+    margin:6px;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px ;
+ }
 .work{
     display: flex;
     
