@@ -10,26 +10,41 @@
     padding: 0;
     box-sizing: border-box;}
 
+
+
+      
   
-  img{
-   display:flex;
-    justify-content: space-between;
-    margin: 5px ;
+ .work{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    background-color: #06080D;
+    color: #1B8EF2;
+    margin:6px;
     padding: 20px;
-    margin:auto;
+    border: 1px solid transparent;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px ;}
+
+.work:hover{
+    border-color:#5CB9F2 ;
+    box-shadow:#d0d0d0 0 0 10px;
+}
+ img{   
     border: 1px solid transparent;
     border-width: 1px 1px 1px 1px;
     border-radius: 5px ;
-  }
+ }
+
   img:hover{
+    transform: scale(1.1);
     border: 1px solid #1B8EF2;
     border-width: 1px 1px 1px 1px;
     border-radius: 5px ;
     box-shadow:#FF42E3 0 0 5px;
   }
-/*body{}
-    
-    /*background-color: #06080D;
+body{   
+    background-color: #06080D;
     color: #1B8EF2;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -37,7 +52,7 @@
     line-height: 1.5;
     margin: 0;
     padding: 0;
-}*/
+}
 
 h1,h2,h3{
     display:flex;
@@ -68,6 +83,7 @@ nav{
     background-color: #06080D;
     color: #1B8EF2;
     padding: 20px;
+    min-width: none;
     margin:auto;
     border: 1px solid transparent;
     border-width: 1px 1px 1px 1px;
@@ -75,10 +91,11 @@ nav{
 }
 nav:hover{
     border-color:#5CB9F2 ;
-    box-shadow:#d0d0d0 0 0 10px;
+    box-shadow:#FF42E3 0 0 10px;
 }
 nav a{
     color: #1B8EF2;
+    
     text-decoration: none;
     padding: 10px;
     margin: 5px;
@@ -87,7 +104,7 @@ nav a{
 nav a:hover{
     color: #5CB9F2;
     border-color:#5CB9F2 ;
-    box-shadow:#FF42E3 0 0 5px;
+    box-shadow:#FF42E3 0 0 10px;
 }
 
 ul{
@@ -98,14 +115,15 @@ ul{
     padding:0px;
     margin:0px;
 }
-/*li.img{
-    margin-right:auto */
+
 p{
     display: flex;
-    justify-content: flex-row; 
+    justify-content: center; 
+    flex-wrap:wrap;
     background-color: #06080D;
     color: #1B8EF2;
-    padding: 20px;
+    margin:6px;
+    padding: 15px;
     border: 1px solid transparent;
     border-width: 1px 1px 1px 1px;
     border-radius: 5px ;
@@ -117,17 +135,17 @@ p:hover{
 }
 .work{
     display: flex;
-    justify-content: row; 
-    flex-wrap:wrap;
+    
     background-color: #06080D;
     color: #1B8EF2;
+    margin:6px;
     padding: 20px;
     border: 1px solid transparent;
     border-width: 1px 1px 1px 1px;
     border-radius: 5px ;
-
 }
 .work:hover{
+    
     border-color:#5CB9F2 ;
     box-shadow:#FF42E3 0 0 5px;
 }
@@ -151,7 +169,7 @@ p:hover{
     justify-content: center; 
     background-color: #06080D;
     color: #1B8EF2;
-    margin:auto;
+    margin:6px;
     padding: 15px;
     border: 1px solid transparent;
     border-width: 1px 1px 1px 1px;
