@@ -1,53 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-* {
+*{      
     background-color: #06080D;
     color: #1B8EF2;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, arial;
     font-size: 16px;
-    font-weight: 75;
+    font-weight: 50;
     line-height: 1.5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;}
-
- .work{
+p{
     display: flex;
+    justify-content: center; 
     flex-wrap:wrap;
-    justify-content: space-evenly;
     background-color: #06080D;
     color: #1B8EF2;
     margin:6px;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid transparent;
     border-width: 1px 1px 1px 1px;
-    border-radius: 5px ;}
-
-.work:hover{
-    border-color:#5CB9F2 ;
-    box-shadow:#d0d0d0 0 0 10px;
+    border-radius: 5px ;
 }
- img{   
-    border: 1px solid transparent;
-    border-width: 1px 1px 1px 1px;
-    border-radius: 5px ;
- }
 
-  img:hover{
-    transform: scale(1.1);
-    border: 1px solid #1B8EF2;
-    border-width: 1px 1px 1px 1px;
-    border-radius: 5px ;
-    box-shadow:#FF42E3 0 0 5px;
-  }
-body{   
-    background-color: #06080D;
-    color: #1B8EF2;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 75;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+p:hover{
+    border-color:#5CB9F2 ;
+    box-shadow:#FF42E3 0 0 7px;
 }
 
 h1,h2,h3{
@@ -63,13 +40,13 @@ h1,h2,h3{
 }
 
 header{ 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #06080D;
-    color: #1B8EF2;
-    padding: 5px;
-    border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #06080D;
+        color: #1B8EF2;
+        padding: 5px;
+        border-radius: 5px;
 }
 
 nav{
@@ -85,13 +62,14 @@ nav{
     border-width: 1px 1px 1px 1px;
     border-radius: 5px ;
 }
+
 nav:hover{
     border-color:#5CB9F2 ;
     box-shadow:#FF42E3 0 0 10px;
 }
+
 nav a{
-    color: #1B8EF2;
-    
+    color: #1B8EF2;    
     text-decoration: none;
     padding: 10px;
     margin: 5px;
@@ -103,6 +81,48 @@ nav a:hover{
     box-shadow:#FF42E3 0 0 10px;
 }
 
+.work{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    background-color: #06080D;
+    color: #1B8EF2;
+    margin:6px;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px ;
+}
+
+.work:hover{
+    border-color:#5CB9F2 ;
+    box-shadow:#d0d0d0 0 0 10px;
+}
+img{   
+    border: 1px solid transparent;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px ;
+ }
+
+img:hover{
+    transform: scale(1.1);
+    border: 1px solid #1B8EF2;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px ;
+    box-shadow:#FF42E3 0 0 5px;
+  }
+
+body{   
+    background-color: #06080D;
+    color: #1B8EF2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 75;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
 ul{
     display:flex;
     flex-wrap:wrap;
@@ -112,27 +132,9 @@ ul{
     margin:0px;
 }
 
-p{
-    display: flex;
-    justify-content: center; 
-    flex-wrap:wrap;
-    background-color: #06080D;
-    color: #1B8EF2;
-    margin:6px;
-    padding: 15px;
-    border: 1px solid transparent;
-    border-width: 1px 1px 1px 1px;
-    border-radius: 5px ;
- }
-    
-p:hover{
-    border-color:#5CB9F2 ;
-    box-shadow:#FF42E3 0 0 7px;
-}
 
 .spacer{
-    display: flex;
-    
+    display: flex;    
     justify-content: space-evenly;
     background-color: #06080D;
     color: #1B8EF2;
@@ -140,16 +142,16 @@ p:hover{
     padding: 20px;
     border: 1px solid transparent;
     border-width: 1px 1px 1px 1px;
-    border-radius: 5px ;}
-    .spacer:hover{
+    border-radius: 5px ;
+}
     
-        border-color:#5CB9F2 ;
-        box-shadow:#FF42E3 0 0 5px;
-    }
+.spacer:hover{    
+    border-color:#5CB9F2 ;
+    box-shadow:#FF42E3 0 0 5px;
+}
  
 .work{
     display: flex;
-    
     background-color: #06080D;
     color: #1B8EF2;
     margin:6px;
@@ -161,7 +163,7 @@ p:hover{
 .work:hover{
     
     border-color:#5CB9F2 ;
-    box-shadow:#FF42E3 0 0 5px;
+    box-shadow:#FF42E3 0 0 10px;
 }
 .cap{
     font-size:12px;
@@ -211,8 +213,8 @@ p:hover{
     border-radius: 5px ;
 }
 @media screen and (max-width: 992px) {
-    .card {
-      width: 50%;
+    body {
+      width: 100%;
     }
     /* Change the header color */
     header {
@@ -221,7 +223,7 @@ p:hover{
   }
 
   @media screen and (max-width: 768px) {
-    .card {
+    body {
       width: 100%;
     }
     /* Change the header color */
