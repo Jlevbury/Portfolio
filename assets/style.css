@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+/*roboto font link included to allow display of primary selected font */
 *{      
     background-color: #06080D;
     color: #1B8EF2;
@@ -9,7 +10,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;}
-    
+/* flex added to html css as backup for when media query fails to work */
+html{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+}    
+body{   
+    background-color: #06080D;
+    color: #1B8EF2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 75;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+/*flex display added to make the site responsive and easy to read on all devices,
+ border radius and transparency applied to give organic shape to displayed items. margin,padding adjusted to
+ prevent overlapping shadow cast to neighboring edges on highlight */
 p{
     display: flex;
     justify-content: center; 
@@ -22,18 +41,21 @@ p{
     border-width: 1px 1px 1px 1px;
     border-radius: 5px ;
 }
-
+/* hover element added to let user know element is live and clickable , 
+shadow added to make it stand out and amplify overall theme of the site, shadow sides adjusted to 
+prevent casting shadow onto neighboring elements. */
 p:hover{
     border-color:#5CB9F2 ;
     box-shadow:#FF42E3 0 0 7px;
 }
+/* P Class added for easy location in the future to make changes to type text name info & logo information */
 p.hone{
     font-size: 24px;
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 5px;
 }
-
+/* flex added to h1 with the intention of nesting nav items and logo in the header */
 h1{
     display: flex;
     flex-wrap:wrap;
@@ -51,19 +73,22 @@ h1,h2,h3{
     margin:15,15,15,15;
     border-radius: 5px;
 }
-
+/* flex added to h1 with the intention of nesting nav items and logo in the header */
 header{ 
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         width:auto ;
         background-color: #06080D;
         color: #1B8EF2;
         padding: 5px;
         border-radius: 5px;
 }
-
+/* same interactive elements applied to remain in style with other content */
 nav{
-    position: absolute;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
     top: 15px;
     left: 50%;        
     background-color: #06080D;
@@ -94,10 +119,27 @@ nav a:hover{
     border-color:#5CB9F2 ;
     box-shadow:#FF42E3 0 0 7px;
 }
+ul{
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap:wrap;
+    list-style: none;
+    align-items: center;
+    padding:0px;
+    margin:0px;
+    border-radius: 10px;
+}
+/* section created to test the scolling of links from the nav bar to the section of the page,
+as well as display first app in a more prominent position when contrasted against the other apps 
+in the image gallery below it, future implementation of opacity adjustment and text display on highlight planned 
+for future revisions */
 .firstapp{
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
+    translate: 50%, 50%;
 }
+/* same interactive elements applied to remain in style with other content */
 .work{
     display: flex;
     flex-wrap:wrap;
@@ -129,29 +171,7 @@ img:hover{
     box-shadow:#FF42E3 0 0 5px;
   }
 
-body{   
-    background-color: #06080D;
-    color: #1B8EF2;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 75;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-}
-
-ul{
-    display:flex;
-    justify-content: flex-end;
-    flex-wrap:wrap;
-    list-style: none;
-    align-items: center;
-    padding:0px;
-    margin:0px;
-    border-radius: 10px;
-}
-
-
+/* element not used in current revision, placeheld for future implemenetation.
 .spacer{
     display: flex;    
     justify-content: space-evenly;
@@ -168,8 +188,8 @@ ul{
     border-color:#5CB9F2 ;
     box-shadow:#FF42E3 0 0 5px;
 }
-
-
+*/
+/* same interactive elements applied to remain in style with other content */
 .work{
     display: flex;
     background-color: #06080D;
@@ -185,10 +205,20 @@ ul{
     border-color:#5CB9F2 ;
     box-shadow:#FF42E3 0 0 10px;
 }
+/*caption class created due to relocating the first app above the image gallery,
+to allow for the caption to be displayed in a more prominent position */
+.firstcap{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    translate: 50%, 50%;}
+
 .cap{
     font-size:12px;
-    margin-inline: 5px;
+    margin-inline: 50px;
+   
 }
+/* same interactive elements applied to remain in style with other content */
 .about{
     display: flex;
     justify-content: center; 
@@ -204,6 +234,8 @@ ul{
     border-color:#5CB9F2 ;
     box-shadow: #FF42E3 0 0 5px;
 }
+/* same interactive elements applied to remain in style with other content ,area to be used to 
+display renders of 3d art portolio and game assets produced, will link to artstation items in future revision*/
 .ren{
     display: flex;
     flex-wrap: wrap;
@@ -221,6 +253,7 @@ ul{
     border-color:#5CB9F2 ;
     box-shadow:#FF42E3 0 0 5px;
 }
+/* same interactive elements applied to remain in style with other content */
 .contact{
     display: flex;
     justify-content: center; 
@@ -232,21 +265,61 @@ ul{
     border-width: 1px 1px 1px 1px;
     border-radius: 5px ;
 }
+/* media queries given flex properties to scale with mobile formatting and window sizing 
+, header color will change and flex direction becomes a column*/
 @media screen and (max-width: 992px) {
-    body {
-      width: 100%;
-    }
-    /* Change the header color */
+   
+    
     header {
       background:#0d1720 ;
+    }
+
+    body {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+      width: 100%;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        top: 15px;
+        left: 50%;        
+        background-color: #06080D;
+        color: #1B8EF2;
+        padding: 10px;
+        min-width: none;
+        border: 1px solid transparent;
+        border-width: 1px 1px 1px 1px;
+        border-radius: 5px ;
     }
   }
 
   @media screen and (max-width: 768px) {
     body {
-      width: 100%;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+         width: 100%;
     }
-    /* Change the header color */
+
+    nav{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        top: 15px;
+        left: 50%;        
+        background-color: #06080D;
+        color: #1B8EF2;
+        padding: 10px;
+        min-width: none;
+        border: 1px solid transparent;
+        border-width: 1px 1px 1px 1px;
+        border-radius: 5px ;
+    }
+
     header {
       background: #151e27;
     }
