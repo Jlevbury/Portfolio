@@ -1,6 +1,7 @@
 # Portfolio
 My collected works
 https://jlevbury.github.io/Portfolio/
+![portfolio preview](https://user-images.githubusercontent.com/125767916/229161631-f08dbf2c-b24d-4df7-9edc-f02dca423094.png)
 
 ## Description
 
